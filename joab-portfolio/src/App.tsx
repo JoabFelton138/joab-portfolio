@@ -1,12 +1,12 @@
 import './App.css'
-import { Button } from './components/ui/button'
+import { Navbar } from './components/Navbar'
 
 function App() {
 
   return (
     <>
       <section>
-        <Button variant="outline">Button</Button>
+        <Navbar />      
       </section>
     </>
   )
