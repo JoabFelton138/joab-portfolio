@@ -1,3 +1,4 @@
+import { ArrowDownIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from "./ui/navigation-menu";
 
@@ -24,8 +25,10 @@ export const Navbar = () => {
                     ))}
                 </NavigationMenuList>
             </NavigationMenu>
-            <Button variant="outline" size="lg" className="p-4 cursor-pointer">
-                CV
+            <Button asChild variant="outline">
+                <a>
+                    CV <ArrowDownIcon className="size-4" />
+                </a>
             </Button>
         </div>
     );
