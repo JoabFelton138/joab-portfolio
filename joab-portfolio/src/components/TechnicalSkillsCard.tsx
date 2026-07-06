@@ -20,7 +20,7 @@ export const TechnicalSkillsCard = ({ name, skills }: { name: string, skills: st
                     {skills.map((skill) => (
                     <div key={skill} className="flex gap-2">
                         <Check className="size-4 shrink-0 text-muted-foreground" />
-                        {skill}
+                        <p className="text-sm text-muted-foreground">{skill}</p>
                     </div>
                     ))}
                 </CardContent>
