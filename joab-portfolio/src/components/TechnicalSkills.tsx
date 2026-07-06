@@ -41,7 +41,7 @@ export const TechnicalSkills = () => {
     ];
     
     return (
-        <section className="mx-auto w-full max-w-7xl px-8 py-4">            
+        <section className="mx-auto w-full max-w-7xl px-8 pt-2">            
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12 pt-8 md:gap-y-10 lg:gap-y-8">                
                 {technicalSkills.map((skill) => (
                     <TechnicalSkillsCard 
