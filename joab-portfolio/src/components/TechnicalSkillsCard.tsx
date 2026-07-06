@@ -1,16 +1,17 @@
 import { Check, Code } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { IconCircle } from "./IconCircle";
 
 export const TechnicalSkillsCard = ({ name, skills }: { name: string, skills: string[] }) => {
 
-    const iconClass = "absolute left-1/2 top-0 flex size-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-muted shadow-md ring-4 ring-background";
+    const iconClass = "absolute left-1/2 top-0 flex size-16 -translate-x-1/2 -translate-y-1/2";
 
     return (
         <>
             <Card className="relative overflow-visible">
-                <div className={iconClass}>
+                <IconCircle className={iconClass}>
                     <Code className="size-8 text-muted-foreground" />
-                </div>
+                </IconCircle>
 
                 <CardHeader className="pt-10 text-center">
                     <CardTitle>{name}</CardTitle>
