@@ -1,5 +1,6 @@
 import './App.css'
 import { About } from './components/About'
+import { CareerHighlights } from './components/CareerHighlights'
 import { Navbar } from './components/Navbar'
 import { TechnicalSkills } from './components/TechnicalSkills'
 
@@ -11,6 +12,7 @@ function App() {
         <Navbar />
         <About />
         <TechnicalSkills />
+        <CareerHighlights />
       </section>
     </>
   )

@@ -4,7 +4,7 @@ import { IconCircle } from "./IconCircle";
 
 export const CareerHighlightsCard = () => {
     
-    const highlightClass = "size-6 text-muted-foreground";
+    const highlightClass = "size-5 text-muted-foreground";
 
     const careerHighlights = [
         {
@@ -22,28 +22,27 @@ export const CareerHighlightsCard = () => {
     ];
 
     return (
-        <Card>
-            <CardHeader className="flex flex-row items-center gap-4">
-                <IconCircle className="size-15">
-                    <Medal className="size-8 text-muted-foreground" />
+        <Card className="flex h-full flex-col justify-start p-6">
+            <CardHeader className="grid grid-cols-[3rem_1fr] items-center gap-x-4 px-0 pb-0">
+                <IconCircle className="size-12 justify-self-center">
+                <Medal className="size-6 text-muted-foreground" />
                 </IconCircle>
                 <CardTitle>Career Highlights</CardTitle>
             </CardHeader>
-                <CardContent className="pt-4 px-6 pb-6">
-                    <div className="flex flex-col gap-6">
-                        {careerHighlights.map((ch) => (
-                            <div className="flex gap-4" key={ch.highlight}>
-                                <IconCircle 
-                                    className="size-10 shrink-0 self-start ring-2 shadow-sm">
-                                        {ch.icon}
-                                </IconCircle>
-                                <p className="text-sm leading-relaxed text-muted-foreground">
-                                    {ch.highlight}
-                                </p>
-                            </div>
-                        ))}
+            <CardContent className="px-0 pt-4">
+                <div className="flex flex-col gap-4">
+                {careerHighlights.map((ch) => (
+                    <div className="grid grid-cols-[3rem_1fr] items-start gap-x-3" key={ch.highlight}>
+                    <IconCircle className="size-10 shrink-0 justify-self-center ring-2 shadow-sm">
+                        {ch.icon}
+                    </IconCircle>
+                    <p className="text-sm leading-relaxed text-muted-foreground">
+                        {ch.highlight}
+                    </p>
                     </div>
-                </CardContent>
+                ))}
+                </div>
+            </CardContent>
         </Card>
     );
 }
