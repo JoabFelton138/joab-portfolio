@@ -1,7 +1,7 @@
 import { Link, Quote } from "lucide-react"
-import { IconCircle } from "./IconCircle"
-import { Card, CardContent, CardHeader, CardTitle } from "./ui/card"
-import { Button } from "./ui/button"
+import { IconCircle } from "../IconCircle"
+import { Card, CardContent, CardHeader, CardTitle } from "../ui/card"
+import { Button } from "../ui/button"
 
 export const RecommendationCard = () => {
 

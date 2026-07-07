@@ -1,6 +1,6 @@
 import { Check, Code } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { IconCircle } from "./IconCircle";
+import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
+import { IconCircle } from "../IconCircle";
 
 export const TechnicalSkillsCard = ({ name, skills }: { name: string, skills: string[] }) => {
 

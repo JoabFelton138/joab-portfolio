@@ -1,8 +1,8 @@
 import './App.css'
 import { About } from './components/About'
-import { CareerHighlights } from './components/CareerHighlights'
+import { CareerHighlightsAndRecommendation } from './components/career-highlights-and-recommendation/CareerHighlightsAndRecommendation'
 import { Navbar } from './components/Navbar'
-import { TechnicalSkills } from './components/TechnicalSkills'
+import { TechnicalSkills } from './components/technical-skills/TechnicalSkills'
 
 function App() {
 
@@ -12,7 +12,7 @@ function App() {
         <Navbar />
         <About />
         <TechnicalSkills />
-        <CareerHighlights />
+        <CareerHighlightsAndRecommendation />
       </section>
     </>
   )

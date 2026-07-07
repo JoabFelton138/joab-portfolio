@@ -1,6 +1,6 @@
 import { GlobeIcon, Medal, RocketIcon, WrenchIcon } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "./ui/card"
-import { IconCircle } from "./IconCircle";
+import { Card, CardContent, CardHeader, CardTitle } from "../ui/card"
+import { IconCircle } from "../IconCircle";
 
 export const CareerHighlightsCard = () => {
     
