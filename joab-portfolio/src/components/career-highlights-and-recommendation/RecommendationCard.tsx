@@ -1,7 +1,8 @@
-import { Link, Quote } from "lucide-react"
+import { Quote } from "lucide-react"
 import { IconCircle } from "../IconCircle"
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card"
 import { Button } from "../ui/button"
+import { FaLinkedin } from "react-icons/fa"
 
 export const RecommendationCard = () => {
 
@@ -30,7 +31,7 @@ export const RecommendationCard = () => {
                     </p>
                     <Button variant="outline" className="mt-4 w-fit gap-2">
                         View on LinkedIn
-                        <Link/>
+                        <FaLinkedin className="size-4" />
                     </Button>
                 </div>
             </CardContent>
