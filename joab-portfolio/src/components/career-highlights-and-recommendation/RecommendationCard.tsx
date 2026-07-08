@@ -11,7 +11,7 @@ export const RecommendationCard = () => {
         <Card className="flex h-full flex-col justify-start gap-0 p-6">
             <CardHeader className="flex flex-row items-center gap-4 px-0 pb-6">
                 <IconCircle className="size-12">
-                <Quote className="size-6 text-muted-foreground" />
+                    <Quote className="size-6 text-muted-foreground" />
                 </IconCircle>
                 <CardTitle>LinkedIn Recommendation</CardTitle>
             </CardHeader>
