@@ -3,8 +3,8 @@ import { ProjectCard } from "./ProjectCard";
 const projects = [
     {
         title: "C Lewis Exterior Cleaning",
-        description: "A marketing site for an exterior cleaning company, helping promote their services and customer reach",
-        image: "/c-lewis-cleaning.webp",
+        description: "A marketing site for an exterior cleaning company, helping promote their services and customer reach.",
+        image: "/projects/c-lewis-cleaning.webp",
         url: "https://clewisexteriorcleaning.co.uk/",
         github: "https://github.com/JoabFelton138/C-Lewis-Exterior-Cleaning",
         technologies: ["React", "Vite", "Tailwind CSS", "TypeScript", "Shadcn UI"],
@@ -12,7 +12,7 @@ const projects = [
     {
         title: "Sam LT Illustration [WIP]",
         description: `An upcoming portfolio website aimed at highlighting an artist's illustrations and photography.`,
-        image: "/sam-lt-illustration.webp",
+        image: "/projects/sam-lt-illustration.webp",
         url: "https://sam-l-t-illustration.vercel.app/",
         github: "https://github.com/JoabFelton138/Sam-L-T-Illustration",
         technologies: ["Next.js", "Zustand", "Tailwind CSS", "TypeScript", "Shadcn UI"],
@@ -20,7 +20,7 @@ const projects = [
     {
         title: "Cafe Connect Data Pipeline",
         description: "Pulls raw CSVs from S3, cleans and structures the records to ensure data is ready for analysis.",
-        image: "/data-pipeline.webp",
+        image: "/projects/data-pipeline.webp",
         github: "https://github.com/JoabFelton138/Cafe_Connect_Data_Pipeline_Generation",
         technologies: ["Python", "AWS SQS", "AWS Lambda", "AWS Redshift", "AWS S3", "AWS QuickSight", "Docker"],
     },
