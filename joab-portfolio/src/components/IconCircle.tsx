@@ -7,7 +7,7 @@ interface IconCircleProps {
 
 export const IconCircle = ({className, children} : IconCircleProps) => {
     return (
-        <div className={cn("flex items-center justify-center rounded-full bg-muted shadow-md ring-4 ring-background bg-[var(--icon-circle)]", className)}>
+        <div className={cn("flex items-center justify-center rounded-full bg-icon-circle shadow-md ring-4 ring-background", className)}>
             {children}
         </div>
     )

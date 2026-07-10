@@ -4,13 +4,13 @@ import { IconCircle } from "../IconCircle";
 
 export const TechnicalSkillsCard = ({ name, skills }: { name: string, skills: string[] }) => {
 
-    const iconClass = "absolute left-1/2 top-0 flex size-16 -translate-x-1/2 -translate-y-1/2 bg-[#EDF5FF]";
+    const iconClass = "absolute left-1/2 top-0 flex size-16 -translate-x-1/2 -translate-y-1/2";
 
     return (
         <>
             <Card className="relative overflow-visible">
                 <IconCircle className={iconClass}>
-                    <Code className="size-8 text-[var(--icon-color)]" />
+                    <Code className="size-8 text-icon" />
                 </IconCircle>
 
                 <CardHeader className="pt-10 text-center">
@@ -19,7 +19,7 @@ export const TechnicalSkillsCard = ({ name, skills }: { name: string, skills: st
                 <CardContent className="flex flex-col gap-2 px-6 pb-6">
                     {skills.map((skill) => (
                     <div key={skill} className="flex gap-2">
-                        <Check className="size-4 shrink-0 text-[var(--icon-color)]" />
+                        <Check className="size-4 shrink-0 text-icon-nested" />
                         <p className="text-sm text-muted-foreground">{skill}</p>
                     </div>
                     ))}

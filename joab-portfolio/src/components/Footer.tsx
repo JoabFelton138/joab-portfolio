@@ -5,11 +5,11 @@ import { FaAws } from "react-icons/fa";
 
 export const Footer = () => {
 
-    const iconClass = "size-4 text-muted-foreground";
+    const iconClass = "size-4 text-icon-nested";
     const iconCircleClass = "size-12 shrink-0";
     const titleContainerClass = "flex items-center gap-3";
-    const titleIconClass = "size-6 text-[var(--icon-color)]";
-    const badgeClass = "inline-flexitems-center gap-2 rounded-lg border border-border bg-background px-3 py-2";
+    const titleIconClass = "size-6 text-icon";
+    const badgeClass = "inline-flex items-center gap-2 rounded-lg border border-border-accent bg-fill-soft px-3 py-2";
     const spanClass = "text-sm text-muted-foreground";
 
     const techStack = [
@@ -37,7 +37,7 @@ export const Footer = () => {
 
     const hostedBy = {
         name: "Amazon Web Services",
-        icon: <FaAws className="size-6 text-muted-foreground" />
+        icon: <FaAws className="size-6 text-icon-nested" />
     };
 
     return (

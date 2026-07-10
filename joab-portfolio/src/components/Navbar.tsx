@@ -13,12 +13,15 @@ export const Navbar = () => {
 
 
     return (
-        <div className="flex items-center justify-between w-full px-4 py-4 border-b border-neutral-200 shadow-sm sticky top-0 bg-white z-10">
+        <div className="flex items-center justify-between w-full px-4 py-4 border-b border-border shadow-sm sticky top-0 bg-background z-10">
             <NavigationMenu>
                 <NavigationMenuList className="">
                     {navItems.map((navItem) => (
                         <NavigationMenuItem key={navItem.href}>
-                            <NavigationMenuLink href={navItem.href}>
+                            <NavigationMenuLink
+                                href={navItem.href}
+                                className="hover:bg-[var(--button-outline-hover)] hover:text-[var(--button-outline-fg-hover)] focus:bg-[var(--button-outline-hover)] focus:text-[var(--button-outline-fg-hover)] data-active:bg-[var(--button-outline-hover)] data-active:text-[var(--button-outline-fg-hover)] data-active:hover:bg-[var(--button-outline-hover)] data-active:focus:bg-[var(--button-outline-hover)]"
+                            >
                                 {navItem.label}
                             </NavigationMenuLink>
                         </NavigationMenuItem>
