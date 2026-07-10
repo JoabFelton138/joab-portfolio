@@ -1,5 +1,6 @@
 import { ArrowDownIcon } from "lucide-react";
 import { Button } from "./ui/button";
+import { downloadFiles } from "@/lib/downloadFiles";
 
 export const About = () => {
     const imgClass = "size-40 md:size-48 lg:size-60 rounded-full object-cover shrink-0 border-4 border-background shadow-xl";
@@ -21,7 +22,7 @@ export const About = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                     <div className="flex flex-row flex-wrap justify-center lg:justify-start gap-2">
-                        <Button variant="outline" size="lg">
+                        <Button variant="outline" size="lg" onClick={() => downloadFiles("cv")} className="cursor-pointer">
                             Download CV <ArrowDownIcon className="size-4" />
                         </Button>
                         <Button variant="outline" size="lg">

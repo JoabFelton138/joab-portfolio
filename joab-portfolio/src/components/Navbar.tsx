@@ -1,6 +1,7 @@
 import { ArrowDownIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from "./ui/navigation-menu";
+import { downloadFiles } from "../lib/downloadFiles";
 
 export const Navbar = () => {
 
@@ -28,10 +29,8 @@ export const Navbar = () => {
                     ))}
                 </NavigationMenuList>
             </NavigationMenu>
-            <Button asChild variant="outline">
-                <a>
-                    CV <ArrowDownIcon className="size-4" />
-                </a>
+            <Button variant="outline" className="cursor-pointer" onClick={() => downloadFiles("cv")}>
+                CV <ArrowDownIcon className="size-4" />
             </Button>
         </div>
     );
