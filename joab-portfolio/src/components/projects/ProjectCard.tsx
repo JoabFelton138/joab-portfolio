@@ -15,7 +15,7 @@ interface Project {
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <Card size="sm" className="relative mx-auto flex h-full flex-col w-full max-w-sm pt-0">
+    <Card size="sm" className="relative mx-auto flex h-full flex-col w-full pt-0">
       <div className="relative">
         <img
           src={project.image}
