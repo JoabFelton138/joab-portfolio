@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 export const About = () => {
     const imgClass = "size-40 md:size-48 lg:size-60 rounded-full object-cover shrink-0 border-4 border-background shadow-xl";
     return (
-        <section className="mx-auto w-full max-w-7xl px-8 pt-12 pb-6">
+        <section className="mx-auto w-full max-w-7xl px-8 pt-12 pb-6" id="about">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-6 items-center">
                 <div className="flex justify-center">
                     <img

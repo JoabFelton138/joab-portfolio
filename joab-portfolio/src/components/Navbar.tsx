@@ -5,10 +5,10 @@ import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuL
 export const Navbar = () => {
 
     const navItems = [
-        {label: "About", href: "/"},
-        {label: "Technical Skills", href: "/technical-skills"},
-        {label: "Career Highlights", href: "/career-highlights"},
-        {label: "Projects", href: "/projects"},
+        {label: "About", href: "#about"},
+        {label: "Technical Skills", href: "#technical-skills"},
+        {label: "Career Highlights", href: "#career-highlights"},
+        {label: "Projects", href: "#projects"},
     ]
 
 
