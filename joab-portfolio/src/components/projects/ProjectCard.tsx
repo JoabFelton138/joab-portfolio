@@ -15,7 +15,7 @@ interface Project {
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <Card className="relative mx-auto w-full max-w-sm pt-0">
+    <Card size="sm" className="relative mx-auto flex h-full flex-col w-full max-w-sm pt-0">
       <div className="relative">
         <img
           src={project.image}
@@ -26,13 +26,12 @@ export function ProjectCard({ project }: { project: Project }) {
       </div>
       <CardHeader>
         <CardTitle>{project.title}</CardTitle>
-        <CardDescription>
+        <CardDescription className="line-clamp-3">
           {project.description}
         </CardDescription>
       </CardHeader>
       <div className="border-t border-border-accent mx-4"/>
-      <CardContent>
-        <p className="text-sm text-muted-foreground mb-4">Technologies</p>
+      <CardContent className="flex-1">
         <div className="flex flex-wrap gap-2">
             {project.technologies.map((tech) => (
                 <Badge 
