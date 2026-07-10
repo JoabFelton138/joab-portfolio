@@ -20,9 +20,9 @@ export function ProjectCard({ project }: { project: Project }) {
         <img
           src={project.image}
           alt={project.title}
-          className="aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
+          className="aspect-video w-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/35" />
+        <div className="absolute inset-0 bg-black/10" />
       </div>
       <CardHeader>
         <CardTitle>{project.title}</CardTitle>
