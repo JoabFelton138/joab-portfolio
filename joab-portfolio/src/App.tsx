@@ -10,14 +10,17 @@ function App() {
 
   return (
     <>
-      <section>
-        <Navbar />
+    <Navbar />
+      <div className="bg-background">
+
         <About />
+      </div>
+      <div className="bg-gradient-to-b from-background via-secondary to-transparent">
         <TechnicalSkills />
         <CareerHighlightsAndRecommendation />
-        <Projects />
-        <Footer />
-      </section>
+      </div>
+      <Projects />
+      <Footer />
     </>
   )
 }
