@@ -13,7 +13,7 @@ export const Navbar = () => {
 
 
     return (
-        <div className="flex items-center justify-between w-full px-4 py-4 border-b border-border shadow-sm sticky top-0 bg-background z-10">
+        <div className="flex items-center justify-between w-full px-4 py-4 border-b border-border shadow-sm sticky top-0 bg-background z-50">
             <NavigationMenu>
                 <NavigationMenuList className="">
                     {navItems.map((navItem) => (
