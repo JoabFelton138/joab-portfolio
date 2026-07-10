@@ -8,7 +8,7 @@ export const Footer = () => {
     const iconClass = "size-4 text-muted-foreground";
     const iconCircleClass = "size-12 shrink-0";
     const titleContainerClass = "flex items-center gap-3";
-    const titleIconClass = "size-6 text-muted-foreground";
+    const titleIconClass = "size-6 text-[var(--icon-color)]";
     const badgeClass = "inline-flexitems-center gap-2 rounded-lg border border-border bg-background px-3 py-2";
     const spanClass = "text-sm text-muted-foreground";
 

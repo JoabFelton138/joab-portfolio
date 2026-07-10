@@ -12,12 +12,12 @@ export const RecommendationCard = () => {
         <Card className="flex h-full flex-col justify-start gap-0 p-6">
             <CardHeader className="flex flex-row items-center gap-4 px-0 pb-6">
                 <IconCircle className="size-12">
-                    <Quote className="size-6 text-muted-foreground" />
+                    <Quote className="size-6 text-[var(--icon-color)]" />
                 </IconCircle>
                 <CardTitle>LinkedIn Recommendation</CardTitle>
             </CardHeader>
             <CardContent className="px-0">
-                <div className="border-b border-muted-foreground/10 pb-6">
+                <div className="border-b border-[var(--border-color)] pb-6">
                 <p className="text-sm italic leading-relaxed text-muted-foreground">
                     {recommendation}
                 </p>

@@ -28,14 +28,14 @@ export function ProjectCard({ project }: { project: Project }) {
           {project.description}
         </CardDescription>
       </CardHeader>
-      <div className="border-t border-border mx-4"/>
+      <div className="border-t border-[var(--border-color)] mx-4"/>
       <CardContent>
         <p className="text-sm text-muted-foreground mb-4">Technologies</p>
         <div className="flex flex-wrap gap-2">
             {project.technologies.map((tech) => (
                 <Badge 
                     variant="secondary" 
-                    className="h-6 px-2.5 text-xs font-medium"
+                    className="h-6 px-2.5 text-xs font-medium bg-[#EDF5FF]"
                     key={tech}>
                         {tech}
                 </Badge>
@@ -43,14 +43,14 @@ export function ProjectCard({ project }: { project: Project }) {
         </div>
       </CardContent>
       <CardFooter className="bg-background border-none flex flex-row gap-2">
-        <Button asChild variant="outline">
+        <Button asChild size="sm" variant="outline" className="hover:bg-[#CFE1FF]">
             <a href={project.github} target="_blank" rel="noopener noreferrer">
                 View Github
                 <FaGithub className="size-4" />
             </a>
         </Button>
         {project.url && (
-            <Button asChild variant="outline">
+            <Button asChild size="sm" variant="outline">
                 <a href={project.url} target="_blank" rel="noopener noreferrer">
                     View Website
                     <Link href={project.url} target="_blank"/>

@@ -4,7 +4,7 @@ import { IconCircle } from "../IconCircle";
 
 export const CareerHighlightsCard = () => {
     
-    const highlightClass = "size-5 text-muted-foreground";
+    const highlightClass = "size-5 text-[var(--icon-color)]";
 
     const careerHighlights = [
         {
@@ -25,7 +25,7 @@ export const CareerHighlightsCard = () => {
         <Card className="flex h-full flex-col justify-start p-6">
             <CardHeader className="grid grid-cols-[3rem_1fr] items-center gap-x-4 px-0 pb-0">
                 <IconCircle className="size-12 justify-self-center">
-                <Medal className="size-6 text-muted-foreground" />
+                <Medal className="size-6 text-[var(--icon-color)]" />
                 </IconCircle>
                 <CardTitle>Career Highlights</CardTitle>
             </CardHeader>
