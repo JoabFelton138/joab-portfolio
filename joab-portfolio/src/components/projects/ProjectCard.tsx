@@ -18,8 +18,8 @@ export function ProjectCard({ project }: { project: Project }) {
     <Card className="relative mx-auto w-full max-w-sm pt-0">
       <div className="relative">
         <img
-          src="https://avatar.vercel.sh/shadcn1"
-          alt="Event cover"
+          src={project.image}
+          alt={project.title}
           className="aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
         />
         <div className="absolute inset-0 bg-black/35" />
