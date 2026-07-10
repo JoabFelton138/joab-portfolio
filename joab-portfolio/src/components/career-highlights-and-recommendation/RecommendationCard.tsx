@@ -29,9 +29,11 @@ export const RecommendationCard = () => {
                     <p className="text-sm text-muted-foreground">
                         Platform Director at Fornax Energy
                     </p>
-                    <Button variant="outline" className="mt-4 w-fit gap-2">
-                        View on LinkedIn
-                        <FaLinkedin className="size-4" />
+                    <Button asChild variant="outline" className="mt-4 w-fit gap-2"> 
+                        <a href={"https://www.linkedin.com/in/joab-felton/"} target="_blank" rel="noopener noreferrer">
+                            View on LinkedIn
+                            <FaLinkedin className="size-4" />
+                        </a>
                     </Button>
                 </div>
             </CardContent>
