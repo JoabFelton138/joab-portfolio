@@ -9,33 +9,47 @@ export const TechnicalSkills = () => {
 
     const technicalSkills: TechnicalSkill[] = [
         {
-            name: "Frontend Development",
+            name: "Frontend",
             skills: [
-                "HTML",
-                "CSS",
-                "JavaScript",
                 "React",
                 "Next.js",
+                "TypeScript",
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "Tailwind CSS",
+                "Material UI",
+                "Shadcn UI",
             ]
         },
         {
-            name: "Frontend Development",
+            name: "Engineering Practices",
             skills: [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "React",
-                "Next.js",
+                "REST APIs",
+                "GraphQL",
+                "Redux",
+                "Zustand",
+                "Apollo Client",
+                "Jest",
+                "Storybook",
+                "Git",
+                "CI/CD",
+                "Vite",
+                "Performance",
+                "Accessibility",
             ]
         },
         {
-            name: "Frontend Development",
+            name: "Broader Technical Skills",
             skills: [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "React",
-                "Next.js",
+                "Java",
+                "Python",
+                "SQL",
+                "AWS",
+                "Agile",
+                "Scrum",
+                "Pair Programming",
+                "Code Reviews",
             ]
         }
     ];
