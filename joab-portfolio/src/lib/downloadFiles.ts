@@ -2,7 +2,7 @@ type DownloadableDoc = "cv" | "pen-pic";
 
 const Files: Record<DownloadableDoc, {path: string, filename: string}> = {
     cv: {path: "docs/cv.pdf", filename: "cv.pdf"},
-    "pen-pic": {path: "docs/pen-pic.png", filename: "pen-pic.png"},
+    "pen-pic": {path: "docs/pen-pic.pdf", filename: "pen-pic.pdf"},
 }
 
 export const downloadFiles = (doc: DownloadableDoc) => {
