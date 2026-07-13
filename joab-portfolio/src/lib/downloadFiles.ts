@@ -1,4 +1,4 @@
-type DownloadableDoc = "cv" | "pen-pic";
+export type DownloadableDoc = "cv" | "pen-pic";
 
 const Files: Record<DownloadableDoc, {path: string, filename: string}> = {
     cv: {path: "docs/cv.pdf", filename: "cv.pdf"},
