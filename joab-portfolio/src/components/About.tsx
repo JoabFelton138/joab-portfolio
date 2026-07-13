@@ -1,20 +1,14 @@
 import { ArrowDownIcon } from "lucide-react";
 import { Button } from "./ui/button";
-import { downloadFiles, type DownloadableDoc } from "@/lib/downloadFiles";
-import { useState } from "react";
 import { Spinner } from "./ui/spinner";
+import { useDownloadDoc } from "@/lib/useDownloadDoc";
 
 export const About = () => {
 
-    const handleClickDownload = (doc: DownloadableDoc) => {
-        const setLoading = doc === "cv" ? setIsDownloadingCV : setIsDownloadingPenPic;
-        setLoading(true);
-        downloadFiles(doc);
-        setTimeout(() => setLoading(false), 1000);
-      };
+ 
 
-    const [isDownloadingCV, setIsDownloadingCV] = useState(false);
-    const [isDownloadingPenPic, setIsDownloadingPenPic] = useState(false);
+    const cv = useDownloadDoc("cv");
+    const penPic = useDownloadDoc("pen-pic");
     const aboutMeText = `An inquisitive Developer with a First-Class Computer Science degree, specialising in building modern, user-focused applications that translate UI/UX designs into intuitive, production-ready interfaces. Proficient in React, Next.js, TypeScript, and modern JavaScript tooling, with strengths in writing clean, maintainable code, implementing responsive and accessible designs, and applying engineering best practices to ensure reliable delivery. Experienced working within cross-functional, client-facing teams, integrating APIs, and balancing technical constraints with stakeholder needs to deliver meaningful business outcomes.`;
     const imgClass = "size-45 md:size-55 lg:size-65 rounded-full object-cover shrink-0 border-4 border-background shadow-xl";
     
@@ -36,13 +30,13 @@ export const About = () => {
                         {aboutMeText}
                     </p>
                     <div className="flex flex-row flex-wrap justify-center lg:justify-start gap-2">
-                        <Button variant="outline" size="lg" onClick={() => handleClickDownload("cv")} className="cursor-pointer">
+                        <Button variant="outline" size="lg" onClick={() => cv.handleClickDownload()} className="cursor-pointer">
                             Download CV 
-                            {isDownloadingCV ? <Spinner /> : <ArrowDownIcon className="size-4" />}
+                            {cv.isDownloading ? <Spinner /> : <ArrowDownIcon className="size-4" />}
                         </Button>
-                        <Button variant="outline" onClick={() => handleClickDownload("pen-pic")} size="lg" className="cursor-pointer">
+                        <Button variant="outline" onClick={() => penPic.handleClickDownload()} size="lg" className="cursor-pointer">
                             Download Pen Pic 
-                            {isDownloadingPenPic ? <Spinner /> : <ArrowDownIcon className="size-4" />}
+                            {penPic.isDownloading ? <Spinner /> : <ArrowDownIcon className="size-4" />}
                         </Button>
                     </div>
                 </div>

@@ -1,9 +1,12 @@
 import { ArrowDownIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from "./ui/navigation-menu";
-import { downloadFiles } from "../lib/downloadFiles";
+import { useDownloadDoc } from "@/lib/useDownloadDoc";
+import { Spinner } from "./ui/spinner";
 
 export const Navbar = () => {
+
+    const cv = useDownloadDoc("cv");
 
     const navItems = [
         {label: "About", href: "#about"},
@@ -29,8 +32,8 @@ export const Navbar = () => {
                     ))}
                 </NavigationMenuList>
             </NavigationMenu>
-            <Button variant="outline" className="cursor-pointer" onClick={() => downloadFiles("cv")}>
-                CV <ArrowDownIcon className="size-4" />
+            <Button variant="outline" className="cursor-pointer" onClick={() => cv.handleClickDownload()}>
+                CV {cv.isDownloading ? <Spinner /> : <ArrowDownIcon className="size-4" />}
             </Button>
         </div>
     );
