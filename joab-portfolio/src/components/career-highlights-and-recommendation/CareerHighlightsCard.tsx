@@ -22,21 +22,21 @@ export const CareerHighlightsCard = () => {
     ];
 
     return (
-        <Card className="flex h-full flex-col justify-start p-6">
-            <CardHeader className="grid grid-cols-[3rem_1fr] items-center gap-x-4 px-0 pb-0">
-                <IconCircle className="size-12 justify-self-center">
-                <Medal className="size-6 text-icon" />
+        <Card className="flex h-full flex-col justify-start gap-6 p-6 pb-8">
+            <CardHeader className="grid grid-cols-[4rem_1fr] items-center gap-x-4 px-0 pb-0">
+                <IconCircle className="size-16 justify-self-center">
+                    <Medal className="size-8 text-icon" />
                 </IconCircle>
-                <CardTitle>Career Highlights</CardTitle>
+                <CardTitle className="text-lg leading-snug">Career Highlights</CardTitle>
             </CardHeader>
-            <CardContent className="px-0 pt-4">
-                <div className="flex flex-col gap-4">
+            <CardContent className="px-0 pt-0">
+                <div className="flex flex-col gap-5">
                 {careerHighlights.map((ch) => (
-                    <div className="grid grid-cols-[3rem_1fr] items-start gap-x-3" key={ch.highlight}>
+                    <div className="grid grid-cols-[4rem_1fr] items-start gap-x-3" key={ch.highlight}>
                     <IconCircle className="size-10 shrink-0 justify-self-center ring-2 shadow-sm">
                         {ch.icon}
                     </IconCircle>
-                    <p className="text-sm leading-relaxed text-muted-foreground">
+                    <p className="text-base leading-relaxed text-muted-foreground">
                         {ch.highlight}
                     </p>
                     </div>

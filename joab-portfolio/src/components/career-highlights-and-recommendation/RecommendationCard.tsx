@@ -11,25 +11,25 @@ export const RecommendationCard = () => {
     return (
         <Card className="flex h-full flex-col justify-start gap-0 p-6">
             <CardHeader className="flex flex-row items-center gap-4 px-0 pb-6">
-                <IconCircle className="size-12">
-                    <Quote className="size-6 text-icon" />
+                <IconCircle className="size-16 shrink-0">
+                    <Quote className="size-8 text-icon" />
                 </IconCircle>
-                <CardTitle>LinkedIn Recommendation</CardTitle>
+                <CardTitle className="text-lg leading-snug">LinkedIn Recommendation</CardTitle>
             </CardHeader>
             <CardContent className="px-0">
                 <div className="border-b border-border-accent pb-6">
-                <p className="text-sm italic leading-relaxed text-muted-foreground">
-                    {recommendation}
-                </p>
+                    <p className="text-base italic leading-relaxed text-muted-foreground">
+                        {recommendation}
+                    </p>
                 </div>
                 <div className="flex flex-col gap-1 pt-6">
-                    <p className="font-semibold text-foreground">
+                    <p className="text-base font-semibold text-foreground">
                         Samuel Ghee
                     </p>
                     <p className="text-sm text-muted-foreground">
                         Platform Director at Fornax Energy
                     </p>
-                    <Button asChild variant="outline" className="mt-4 w-fit gap-2"> 
+                    <Button asChild variant="outline" size="lg" className="mt-4 w-fit gap-2"> 
                         <a href={"https://www.linkedin.com/in/joab-felton/"} target="_blank" rel="noopener noreferrer">
                             View on LinkedIn
                             <FaLinkedin className="size-4" />
