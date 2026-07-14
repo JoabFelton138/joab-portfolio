@@ -33,7 +33,7 @@ export const CareerHighlightsCard = () => {
                 <div className="flex flex-col gap-5">
                 {careerHighlights.map((ch) => (
                     <div className="grid grid-cols-[4rem_1fr] items-start gap-x-3" key={ch.highlight}>
-                    <IconCircle className="size-10 shrink-0 justify-self-center ring-2 shadow-sm">
+                    <IconCircle className="size-10 shrink-0 justify-self-center">
                         {ch.icon}
                     </IconCircle>
                     <p className="text-base leading-relaxed text-muted-foreground">

@@ -6,7 +6,7 @@ import { FaAws } from "react-icons/fa";
 
 export const Footer = () => {
 
-    const iconClass = "text-muted-foreground";
+    const iconClass = "text-foreground";
     const iconCircleClass = "size-12 shrink-0";
     const titleContainerClass = "flex items-center gap-3";
     const titleIconClass = "size-6 text-icon";
@@ -38,7 +38,7 @@ export const Footer = () => {
 
     const hostedBy = {
         name: "Amazon Web Services",
-        icon: <FaAws className="text-muted-foreground" />
+        icon: <FaAws className="text-foreground" />
     };
 
     return (

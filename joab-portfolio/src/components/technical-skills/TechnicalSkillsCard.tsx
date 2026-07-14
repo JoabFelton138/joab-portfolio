@@ -36,7 +36,7 @@ export const TechnicalSkillsCard = ({
             <CardHeader className="gap-4 px-6 pt-6 pb-5">
                 <div className="flex items-start gap-4">
                     {Icon ? (
-                        <IconCircle className="size-16 shrink-0 shadow-md ring-2 ring-background">
+                        <IconCircle className="size-16 shrink-0">
                             <Icon className="size-8 text-icon" />
                         </IconCircle>
                     ) : null}
