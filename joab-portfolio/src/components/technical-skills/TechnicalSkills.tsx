@@ -9,7 +9,7 @@ export const TechnicalSkills = () => {
 
     const technicalSkills: TechnicalSkill[] = [
         {
-            name: "Frontend",
+            name: "Frontend Development",
             skills: [
                 "React",
                 "Next.js",
