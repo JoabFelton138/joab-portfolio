@@ -15,7 +15,7 @@ interface Project {
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <Card size="sm" className="relative mx-auto flex h-full flex-col w-full pt-0">
+    <Card className="relative mx-auto flex h-full w-full flex-col gap-0 pt-0">
       <div className="relative">
         <img
           src={project.image}
@@ -24,39 +24,40 @@ export function ProjectCard({ project }: { project: Project }) {
         />
         <div className="absolute inset-0 bg-black/10" />
       </div>
-      <CardHeader>
-        <CardTitle>{project.title}</CardTitle>
-        <CardDescription className="line-clamp-3">
+      <CardHeader className="gap-2 px-5 pt-5 pb-4">
+        <CardTitle className="text-base leading-snug">{project.title}</CardTitle>
+        <CardDescription className="line-clamp-3 text-sm leading-relaxed">
           {project.description}
         </CardDescription>
       </CardHeader>
-      <div className="border-t border-border-accent mx-4"/>
-      <CardContent className="flex-1">
-        <div className="flex flex-wrap gap-2">
-            {project.technologies.map((tech) => (
-                <Badge 
-                    variant="secondary" 
-                    className="h-6 px-2.5 text-xs font-medium bg-fill-soft text-secondary-foreground"
-                    key={tech}>
-                        {tech}
-                </Badge>
-            ))}
+      <div className="mx-5 border-t border-border-accent" />
+      <CardContent className="flex flex-1 px-5 pt-4 pb-4">
+        <div className="flex flex-wrap content-start gap-2">
+          {project.technologies.map((tech) => (
+            <Badge
+              key={tech}
+              variant="secondary"
+              className="h-6 border-transparent bg-muted px-2.5 text-xs font-medium text-foreground"
+            >
+              {tech}
+            </Badge>
+          ))}
         </div>
       </CardContent>
-      <CardFooter className="bg-background border-none flex flex-row gap-2">
+      <CardFooter className="flex flex-row flex-wrap gap-2 border-none bg-background px-5 pt-2 pb-5">
         <Button asChild size="sm" variant="outline">
-            <a href={project.github} target="_blank" rel="noopener noreferrer">
-                View Github
-                <FaGithub className="size-4" />
-            </a>
+          <a href={project.github} target="_blank" rel="noopener noreferrer">
+            View Github
+            <FaGithub className="size-4" />
+          </a>
         </Button>
         {project.url && (
-            <Button asChild size="sm" variant="outline">
-                <a href={project.url} target="_blank" rel="noopener noreferrer">
-                    View Website
-                    <Link href={project.url} target="_blank"/>
-                </a>
-            </Button>
+          <Button asChild size="sm" variant="outline">
+            <a href={project.url} target="_blank" rel="noopener noreferrer">
+              View Website
+              <Link className="size-4" />
+            </a>
+          </Button>
         )}
       </CardFooter>
     </Card>
